@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "fcda4fd8-00a6-40b1-8cd4-fa0b2bb53725",
+		"name": "JDBL_Hibernate_Casestudy2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "saveUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"userName\": \"delete\",\r\n        \"email\": \"vikas@gmail.com\",\r\n        \"about\": \"I am learner in gfg.\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1234/Users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"Users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/Users/gettingAllUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"Users",
+								"gettingAllUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByUserId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/Users/getBy/70fd1bf1-4d1c-4907-8e27-75c6484df8f5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"Users",
+								"getBy",
+								"70fd1bf1-4d1c-4907-8e27-75c6484df8f5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateByUserId",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"userName\": \"vikas\",\r\n        \"email\": \"vikasupdated@gmail.com\",\r\n        \"about\": \"I am learner in gfg.\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1234/Users/update/70fd1bf1-4d1c-4907-8e27-75c6484df8f5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"Users",
+								"update",
+								"70fd1bf1-4d1c-4907-8e27-75c6484df8f5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByUserId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/Users/delete/2125f6fa-49de-49be-9f58-86d354ba8183",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"Users",
+								"delete",
+								"2125f6fa-49de-49be-9f58-86d354ba8183"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
